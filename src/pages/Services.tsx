@@ -122,13 +122,13 @@ const Services: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div className="mt-10 lg:mt-0">
-              <img
-                src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                alt="Logistics operations"
-                className="rounded-lg shadow-md dark:shadow-primary-purple"
-              />
-            </div>
+                         <div className="mt-10 lg:mt-0">
+               <img
+                 src="/favicon-96x96.png"
+                 alt="PetXpress Logo"
+                 className="w-full h-80 object-contain object-center"
+               />
+             </div>
           </div>
         </div>
       </div>
@@ -165,9 +165,12 @@ const Services: React.FC = () => {
                       </p>
                       <div className="mt-4">
                         <img
-                          src="https://images.unsplash.com/photo-1570710891163-6d3b5c47248b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                          src="https://drive.google.com/thumbnail?id=1csr5J519Yn7Y5YDAYADi0PNJC8kIRJC_&sz=w800"
                           alt="Air Freight"
-                          className="rounded-lg shadow-md"
+                          className="rounded-lg shadow-md w-full h-48 object-cover"
+                          onError={(e) => {
+                            e.currentTarget.src = "https://images.unsplash.com/photo-1570710891163-6d3b5c47248b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80";
+                          }}
                         />
                       </div>
                       <ul className="mt-4 space-y-2 text-sm text-grey-600 dark:text-accent-lavender">
@@ -207,7 +210,7 @@ const Services: React.FC = () => {
                         <img
                           src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
                           alt="Sea Freight"
-                          className="rounded-lg shadow-md"
+                          className="rounded-lg shadow-md w-full h-48 object-cover"
                         />
                       </div>
                       <ul className="mt-4 space-y-2 text-sm text-grey-600 dark:text-accent-lavender">
@@ -245,9 +248,12 @@ const Services: React.FC = () => {
                       </p>
                       <div className="mt-4">
                         <img
-                          src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                          src="https://drive.google.com/thumbnail?id=1oq0IQyIxlRMdZYVS1ZGI6lU0yREJDfyt&sz=w800"
                           alt="Ground Transport"
-                          className="rounded-lg shadow-md"
+                          className="rounded-lg shadow-md w-full h-48 object-cover"
+                          onError={(e) => {
+                            e.currentTarget.src = "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80";
+                          }}
                         />
                       </div>
                       <ul className="mt-4 space-y-2 text-sm text-grey-600 dark:text-accent-lavender">
@@ -285,9 +291,12 @@ const Services: React.FC = () => {
                       </p>
                       <div className="mt-4">
                         <img
-                          src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                          src="https://drive.google.com/thumbnail?id=1JEqIOSu2itvkZ1CPnFjhCl9NBZLBizEJ&sz=w800"
                           alt="Warehousing"
-                          className="rounded-lg shadow-md"
+                          className="rounded-lg shadow-md w-full h-48 object-cover"
+                          onError={(e) => {
+                            e.currentTarget.src = "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80";
+                          }}
                         />
                       </div>
                       <ul className="mt-4 space-y-2 text-sm text-grey-600 dark:text-accent-lavender">
@@ -362,9 +371,12 @@ const Services: React.FC = () => {
                   </p>
                   <div className="mt-4">
                     <img
-                      src="https://images.unsplash.com/photo-1570710891163-6d3b5c47248b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                      src="https://drive.google.com/thumbnail?id=1csr5J519Yn7Y5YDAYADi0PNJC8kIRJC_&sz=w800"
                       alt="Air Freight"
-                      className="rounded-lg shadow-md"
+                      className="rounded-lg shadow-md w-full h-48 object-cover"
+                      onError={(e) => {
+                        e.currentTarget.src = "https://images.unsplash.com/photo-1570710891163-6d3b5c47248b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80";
+                      }}
                     />
                   </div>
                   <ul className="mt-4 space-y-2 text-sm text-grey-600 dark:text-accent-lavender">
@@ -440,9 +452,12 @@ const Services: React.FC = () => {
                   </p>
                   <div className="mt-4">
                     <img
-                      src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                      src="https://drive.google.com/thumbnail?id=1oq0IQyIxlRMdZYVS1ZGI6lU0yREJDfyt&sz=w800"
                       alt="Ground Transport"
-                      className="rounded-lg shadow-md"
+                      className="rounded-lg shadow-md w-full h-48 object-cover"
+                      onError={(e) => {
+                        e.currentTarget.src = "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80";
+                      }}
                     />
                   </div>
                   <ul className="mt-4 space-y-2 text-sm text-grey-600 dark:text-accent-lavender">
@@ -479,9 +494,12 @@ const Services: React.FC = () => {
                   </p>
                   <div className="mt-4">
                     <img
-                      src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                      src="https://drive.google.com/thumbnail?id=1JEqIOSu2itvkZ1CPnFjhCl9NBZLBizEJ&sz=w800"
                       alt="Warehousing"
-                      className="rounded-lg shadow-md"
+                      className="rounded-lg shadow-md w-full h-48 object-cover"
+                      onError={(e) => {
+                        e.currentTarget.src = "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80";
+                      }}
                     />
                   </div>
                   <ul className="mt-4 space-y-2 text-sm text-grey-600 dark:text-accent-lavender">

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { FaPlane, FaShip, FaTruck, FaWarehouse, FaUser, FaCheckCircle, FaBox, FaCreditCard, FaShippingFast, FaCheckDouble, FaStar, FaStarHalf, FaGlobe, FaAward, FaCertificate, FaMedal, FaHandshake, FaSearch, FaMapMarker, FaEnvelope, FaCalendar, FaBarcode, FaPhone, FaHome, FaPaw, FaMoneyBillWave, FaArrowRight, FaShieldAlt, FaHeadset, FaChartLine, FaClipboardCheck } from 'react-icons/fa';
 import AnimatedCard from '../components/animations/AnimatedCard';
 import Marquee from '../components/animations/Marquee';
+import EnhancedReviews from '../components/EnhancedReviews';
 import heroImage from '../assets/home_hero_image.jpg';
 
 const Home: React.FC = () => {
@@ -93,64 +94,82 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
             <AnimatedCard animation="slide" delay="0ms">
-              <div className="relative p-6 bg-neutral-white dark:bg-neutral-slate rounded-lg shadow-md dark:shadow-primary-purple hover:shadow-md dark:hover:shadow-accent-lavender transition-shadow duration-300">
+              <div className="relative bg-neutral-white dark:bg-neutral-slate rounded-lg shadow-md dark:shadow-primary-purple hover:shadow-md dark:hover:shadow-accent-lavender transition-shadow duration-300 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                  src="https://drive.google.com/thumbnail?id=1PWTxV64pbC9WIJ03vhTI6RR4zsI14eUi&sz=w800"
                   alt="Global network"
-                  className="h-48 w-full object-cover rounded-lg mb-4"
+                  className="w-full h-48 object-cover"
+                  onError={(e) => {
+                    e.currentTarget.src = "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80";
+                  }}
                 />
+                <div className="p-6">
                 <div className="text-primary-blue dark:text-primary-purple mb-4 flex flex-row items-center">
                   <FaGlobe className="h-5 w-5 mr-2" />
                   <h3 className="text-lg font-medium text-primary-blue dark:text-neutral-white uppercase">Global Reach</h3>
-
                 </div>
                 <p className="mt-2 text-grey-300 dark:text-accent-lavender">
                 PetXpress connects families, breeders, and pet lovers across 150+ countries with trusted, worldwide pet transportation solutions.
                 </p>
+                </div>
               </div>
             </AnimatedCard>
 
             <AnimatedCard animation="slide" delay="200ms">
-              <div className="relative p-6 bg-neutral-white dark:bg-neutral-slate rounded-lg shadow-md dark:shadow-primary-purple hover:shadow-md dark:hover:shadow-accent-lavender transition-shadow duration-300">
+              <div className="relative bg-neutral-white dark:bg-neutral-slate rounded-lg shadow-md dark:shadow-primary-purple hover:shadow-md dark:hover:shadow-accent-lavender transition-shadow duration-300 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1580674285054-bed31e145f59?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                  src="https://drive.google.com/thumbnail?id=1Ei1yi4f18NN_fqAgtS5NTF9eoVbMaaP9&sz=w800"
                   alt="Quality service"
-                  className="h-48 w-full object-cover rounded-lg mb-4"
+                  className="w-full h-48 object-cover"
+                  onError={(e) => {
+                    e.currentTarget.src = "https://images.unsplash.com/photo-1580674285054-bed31e145f59?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80";
+                  }}
                 />
+                <div className="p-6">
                 <div className="text-primary-blue dark:text-primary-purple mb-4 flex flex-row items-center">
                   <FaCheckCircle className="h-5 w-5 mr-2" />
                 <h3 className="text-lg font-medium text-primary-blue dark:text-neutral-white uppercase">Safety First</h3>
                 </div>
                 <p className="mt-2 text-grey-300 dark:text-accent-lavender">
-                Your pet’s well-being is our priority. We ensure secure, stress-free travel with the highest standards in care, safety, and punctuality.
+                  Your pet's well-being is our priority. We ensure secure, stress-free travel with the highest standards in care, safety, and punctuality.
                 </p>
+                </div>
               </div>
             </AnimatedCard>
 
             <AnimatedCard animation="slide" delay="400ms">
-              <div className="relative p-6 bg-neutral-white dark:bg-neutral-slate rounded-lg shadow-md dark:shadow-primary-purple hover:shadow-md dark:hover:shadow-accent-lavender transition-shadow duration-300">
+              <div className="relative bg-neutral-white dark:bg-neutral-slate rounded-lg shadow-md dark:shadow-primary-purple hover:shadow-md dark:hover:shadow-accent-lavender transition-shadow duration-300 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                  src="https://drive.google.com/thumbnail?id=1COD8uJrnYLNqH7p1amq3k_xbfBh4pZL7&sz=w800"
                   alt="Full service support"
-                  className="h-48 w-full object-cover rounded-lg mb-4"
+                  className="w-full h-48 object-cover"
+                  onError={(e) => {
+                    e.currentTarget.src = "https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80";
+                  }}
                 />
+                <div className="p-6">
                 <div className="text-primary-blue dark:text-primary-purple mb-4 flex flex-row items-center">
                   <FaBox className="h-5 w-5 mr-2" />
                 <h3 className="text-lg font-medium text-primary-blue dark:text-neutral-white uppercase">FULL-SERVICE SUPPORT</h3>
                 </div>
                 <p className="mt-2 text-grey-300 dark:text-accent-lavender">
-                From international documentation to final delivery, we handle every detail of your pet’s journey — so you don’t have to.
+                  From international documentation to final delivery, we handle every detail of your pet's journey — so you don't have to.
                 </p>
+                </div>
               </div>
             </AnimatedCard>
 
             <AnimatedCard animation="slide" delay="600ms">
-              <div className="relative p-6 bg-neutral-white dark:bg-neutral-slate rounded-lg shadow-md dark:shadow-primary-purple hover:shadow-md dark:hover:shadow-accent-lavender transition-shadow duration-300">
+              <div className="relative bg-neutral-white dark:bg-neutral-slate rounded-lg shadow-md dark:shadow-primary-purple hover:shadow-md dark:hover:shadow-accent-lavender transition-shadow duration-300 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                  src="https://drive.google.com/thumbnail?id=1Se-T5zW1ZeYTW-BpoDgtafigWDl69QZR&sz=w800"
                   alt="Expert team"
-                  className="h-48 w-full object-cover rounded-lg mb-4"
+                  className="w-full h-48 object-cover"
+                  onError={(e) => {
+                    e.currentTarget.src = "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80";
+                  }}
                 />
+                <div className="p-6">
                 <div className="text-primary-blue dark:text-primary-purple mb-4 flex flex-row items-center">
                   <FaCheckDouble className="h-5 w-5 mr-2" />
                 <h3 className="text-lg font-medium text-primary-blue dark:text-neutral-white uppercase">EXPERT TEAM</h3>
@@ -158,6 +177,7 @@ const Home: React.FC = () => {
                 <p className="mt-2 text-grey-300 dark:text-accent-lavender">
                 Our compassionate logistics specialists are trained in global pet travel to ensure every journey is handled with expertise and heart.
                 </p>
+                </div>
               </div>
             </AnimatedCard>
           </div>
@@ -377,188 +397,8 @@ const Home: React.FC = () => {
         </div>
       </div>
 
-      {/* Testimonials Section */}
-      <div className="py-16 bg-neutral-white dark:bg-slate-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <AnimatedCard animation="fade">
-            <div className="text-center">
-              <h2 className="text-3xl font-extrabold text-primary-blue dark:text-neutral-white sm:text-4xl">
-                Happy Tails from Our Clients
-              </h2>
-              <p className="mt-4 text-lg text-grey-300 dark:text-accent-lavender">
-                Don't just take our word for it - hear from our satisfied customers
-              </p>
-            </div>
-          </AnimatedCard>
-
-          <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {/* 1 */}
-            <AnimatedCard animation="slide" delay="0ms">
-              <div className="bg-neutral-white dark:bg-neutral-slate rounded-lg shadow-md dark:shadow-primary-purple p-8 h-full">
-                <div className="flex items-center mb-4">
-                  <img className="h-12 w-12 rounded-full object-cover" src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Johnson" />
-                  <div className="ml-4">
-                    <h3 className="text-lg font-medium text-primary-blue dark:text-neutral-white">Sarah Johnson</h3>
-                    <p className="text-sm text-grey-300 dark:text-accent-lavender">Pet Owner, USA</p>
-                  </div>
-                </div>
-                <div className="flex items-center mb-4">
-                  <div className="flex text-yellow-400">
-                    <FaStar className="h-4 w-4" />
-                    <FaStar className="h-4 w-4" />
-                    <FaStar className="h-4 w-4" />
-                    <FaStar className="h-4 w-4" />
-                    <FaStar className="h-4 w-4" />
-                  </div>
-                  <span className="ml-2 text-sm text-grey-300 dark:text-accent-lavender">5.0</span>
-                </div>
-                <p className="text-grey-200 dark:text-neutral-300">
-                  "My dog flew from NYC to Paris safely. I watched him travel the entire way! This team genuinely cares."
-                </p>
-              </div>
-            </AnimatedCard>
-            {/* 2 */}
-            <AnimatedCard animation="slide" delay="200ms">
-              <div className="bg-neutral-white dark:bg-neutral-slate rounded-lg shadow-md dark:shadow-primary-purple p-8 h-full">
-                <div className="flex items-center mb-4">
-                  <img className="h-12 w-12 rounded-full object-cover" src="https://randomuser.me/api/portraits/men/32.jpg" alt="David Chen" />
-                  <div className="ml-4">
-                    <h3 className="text-lg font-medium text-primary-blue dark:text-neutral-white">David Chen</h3>
-                    <p className="text-sm text-grey-300 dark:text-accent-lavender">Animal Rescue Director</p>
-                  </div>
-                </div>
-                <div className="flex items-center mb-4">
-                  <div className="flex text-yellow-400">
-                    <FaStar className="h-4 w-4" />
-                    <FaStar className="h-4 w-4" />
-                    <FaStar className="h-4 w-4" />
-                    <FaStarHalf className="h-4 w-4" />
-                  </div>
-                  <span className="ml-2 text-sm text-grey-300 dark:text-accent-lavender">3.5</span>
-                </div>
-                <p className="text-grey-200 dark:text-neutral-300">
-                  "We've transported over 80 rescue pets with PetXpress. Reliable, friendly, and totally transparent."
-                </p>
-              </div>
-            </AnimatedCard>
-            {/* 3 */}
-            <AnimatedCard animation="slide" delay="400ms">
-              <div className="bg-neutral-white dark:bg-neutral-slate rounded-lg shadow-md dark:shadow-primary-purple p-8 h-full">
-                <div className="flex items-center mb-4">
-                  <img className="h-12 w-12 rounded-full object-cover" src="https://randomuser.me/api/portraits/women/65.jpg" alt="Emily Martinez" />
-                  <div className="ml-4">
-                    <h3 className="text-lg font-medium text-primary-blue dark:text-neutral-white">Emily Martinez</h3>
-                    <p className="text-sm text-grey-300 dark:text-accent-lavender">Breeder & Trainer</p>
-                  </div>
-                </div>
-                <div className="flex items-center mb-4">
-                  <div className="flex text-yellow-400">
-                    <FaStar className="h-4 w-4" />
-                    <FaStar className="h-4 w-4" />
-                    <FaStar className="h-4 w-4" />
-                    <FaStar className="h-4 w-4" />
-                  </div>
-                  <span className="ml-2 text-sm text-grey-300 dark:text-accent-lavender">4.0</span>
-                </div>
-                <p className="text-grey-200 dark:text-neutral-300">
-                  "Their boarding and documentation support took away all my stress. I recommend them to all breeders."
-                </p>
-              </div>
-            </AnimatedCard>
-            {/* 4 */}
-            <AnimatedCard animation="slide" delay="600ms">
-              <div className="bg-neutral-white dark:bg-neutral-slate rounded-lg shadow-md dark:shadow-primary-purple p-8 h-full">
-                <div className="flex items-center mb-4">
-                  <img className="h-12 w-12 rounded-full object-cover" src="https://randomuser.me/api/portraits/men/45.jpg" alt="Carlos Rivera" />
-                  <div className="ml-4">
-                    <h3 className="text-lg font-medium text-primary-blue dark:text-neutral-white">Carlos Rivera</h3>
-                    <p className="text-sm text-grey-300 dark:text-accent-lavender">Pet Parent, Spain</p>
-                  </div>
-                </div>
-                <div className="flex items-center mb-4">
-                  <div className="flex text-yellow-400">
-                    <FaStar className="h-4 w-4" />
-                    <FaStar className="h-4 w-4" />
-                    <FaStar className="h-4 w-4" />
-                    <FaStar className="h-4 w-4" />
-                    <FaStar className="h-4 w-4" />
-                  </div>
-                  <span className="ml-2 text-sm text-grey-300 dark:text-accent-lavender">5.0</span>
-                </div>
-                <p className="text-grey-200 dark:text-neutral-300">
-                  "PetXpress made our move from Madrid to Sydney stress-free for both us and our cat. The live tracking was a game changer!"
-                </p>
-              </div>
-            </AnimatedCard>
-            {/* 5 */}
-            <AnimatedCard animation="slide" delay="800ms">
-              <div className="bg-neutral-white dark:bg-neutral-slate rounded-lg shadow-md dark:shadow-primary-purple p-8 h-full">
-                <div className="flex items-center mb-4">
-                  <img className="h-12 w-12 rounded-full object-cover" src="https://randomuser.me/api/portraits/women/22.jpg" alt="Priya Singh" />
-                  <div className="ml-4">
-                    <h3 className="text-lg font-medium text-primary-blue dark:text-neutral-white">Priya Singh</h3>
-                    <p className="text-sm text-grey-300 dark:text-accent-lavender">Pet Parent, India</p>
-                  </div>
-                </div>
-                <div className="flex items-center mb-4">
-                  <div className="flex text-yellow-400">
-                    <FaStar className="h-4 w-4" />
-                    <FaStar className="h-4 w-4" />
-                    <FaStar className="h-4 w-4" />
-                    <FaStar className="h-4 w-4" />
-                    <FaStarHalf className="h-4 w-4" />
-                  </div>
-                  <span className="ml-2 text-sm text-grey-300 dark:text-accent-lavender">4.5</span>
-                </div>
-                <p className="text-grey-200 dark:text-neutral-300">
-                  "The team handled all the paperwork and kept me updated at every step. My puppy arrived happy and healthy!"
-                </p>
-              </div>
-            </AnimatedCard>
-            {/* 6 */}
-            <AnimatedCard animation="slide" delay="1000ms">
-              <div className="bg-neutral-white dark:bg-neutral-slate rounded-lg shadow-md dark:shadow-primary-purple p-8 h-full">
-                <div className="flex items-center mb-4">
-                  <img className="h-12 w-12 rounded-full object-cover" src="https://randomuser.me/api/portraits/men/77.jpg" alt="James Lee" />
-                  <div className="ml-4">
-                    <h3 className="text-lg font-medium text-primary-blue dark:text-neutral-white">James Lee</h3>
-                    <p className="text-sm text-grey-300 dark:text-accent-lavender">Pet Owner, Australia</p>
-                  </div>
-                </div>
-                <div className="flex items-center mb-4">
-                  <div className="flex text-yellow-400">
-                    <FaStar className="h-4 w-4" />
-                    <FaStar className="h-4 w-4" />
-                    <FaStar className="h-4 w-4" />
-                    <FaStar className="h-4 w-4" />
-                    <FaStar className="h-4 w-4" />
-                  </div>
-                  <span className="ml-2 text-sm text-grey-300 dark:text-accent-lavender">5.0</span>
-                </div>
-                <p className="text-grey-200 dark:text-neutral-300">
-                  "I was nervous about sending my dog overseas, but PetXpress made it easy and safe. Highly recommend for international moves!"
-                </p>
-              </div>
-            </AnimatedCard>
-          </div>
-          <div className="mt-16 flex justify-center">
-            <div className="bg-neutral-white dark:bg-neutral-slate rounded-lg shadow-md dark:shadow-primary-purple px-8 py-6">
-              <h3 className="text-2xl font-bold text-primary-blue dark:text-neutral-white text-center">Customer Rating: 4.5/5</h3>
-              <div className="flex items-center justify-center mt-4">
-                <div className="flex text-yellow-400">
-                  <FaStar className="h-6 w-6" />
-                  <FaStar className="h-6 w-6" />
-                  <FaStar className="h-6 w-6" />
-                  <FaStar className="h-6 w-6" />
-                  <FaStarHalf className="h-6 w-6" />
-                </div>
-                <span className="ml-4 text-3xl font-bold text-primary-blue dark:text-neutral-white">4.5</span>
-              </div>
-              <p className="mt-2 text-grey-300 dark:text-accent-lavender text-center">Based on 1,482 verified reviews</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      {/* Enhanced Reviews Section */}
+      <EnhancedReviews />
 
       {/* Call to Action Section */}
       <div className="bg-gradient-to-r from-primary-blue to-primary-purple dark:from-neutral-slate dark:to-primary-purple py-16">
