@@ -190,6 +190,12 @@ const Footer: React.FC = () => {
                   <a href="mailto:petxpresslogistics@gmail.com" className="hover:text-primary-blue dark:hover:text-primary-purple transition-colors duration-300 text-sm sm:text-base">petxpresslogistics@gmail.com</a>
                 </span>
               </li>
+              <li className="flex items-center justify-center sm:justify-start space-x-3">
+                <Icon icon={FaPhone} size={16} className="text-primary-blue dark:text-primary-purple" />
+                <span className="text-gray-300">
+                  <a href="tel:+14258809564" className="hover:text-primary-blue dark:hover:text-primary-purple transition-colors duration-300 text-sm sm:text-base">+1 425-880-9564</a>
+                </span>
+              </li>
             </ul>
           </div>
         </div>

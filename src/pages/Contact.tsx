@@ -193,6 +193,17 @@ const Contact: React.FC = () => {
                 </div>
                 <div className="flex items-start">
                   <div className="flex-shrink-0">
+                    <Icon icon={FaPhone} size={24} className="text-primary-blue dark:text-primary-purple" />
+                  </div>
+                  <div className="ml-4">
+                    <p className="text-base font-medium text-primary-blue dark:text-neutral-white">Phone</p>
+                    <p className="mt-1 text-base text-grey-300 dark:text-accent-lavender">
+                      +1 425-880-9564
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="flex-shrink-0">
                     <Icon icon={FaClock} size={24} className="text-primary-blue dark:text-primary-purple" />
                   </div>
                   <div className="ml-4">
