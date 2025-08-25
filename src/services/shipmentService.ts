@@ -9,23 +9,9 @@ import {
   updateDoc,
   deleteDoc,
   query,
-  where,
-  enableIndexedDbPersistence,
-  enableMultiTabIndexedDbPersistence
+  where
 } from 'firebase/firestore';
 import { db } from '../config/firebase';
-
-// Enable offline persistence
-try {
-  enableIndexedDbPersistence(db).catch((err) => {
-    if (err.code === 'failed-precondition') {
-      // Multiple tabs open, persistence can only be enabled in one tab at a time.
-      enableMultiTabIndexedDbPersistence(db);
-    }
-  });
-} catch (err) {
-  // Handle initialization errors
-}
 
 export interface ShipmentPackage {
   quantity: number;

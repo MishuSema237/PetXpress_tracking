@@ -6,6 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { ThemeProvider } from './contexts/ThemeContext';
 import PrivateRoute from './components/PrivateRoute';
 import ThemeToggle from './components/ThemeToggle';
+import LiveChat from './components/LiveChat';
 import Navbar from './components/Navigation';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -55,6 +56,7 @@ const App: React.FC = () => {
                 </Routes>
               </main>
               <ThemeToggle />
+              <LiveChat />
               <Footer />
             </div>
           </Router>

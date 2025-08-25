@@ -3,6 +3,7 @@ import { getShipmentByTracking, Shipment } from '../services/shipmentService';
 import { useAuth } from '../contexts/AuthContext';
 import { useTheme } from '../contexts/ThemeContext';
 import { toast } from 'react-toastify';
+import ShipmentMap from '../components/ShipmentMap';
 import {
   FaSearch,
   FaBox,
@@ -263,6 +264,9 @@ const Track: React.FC = () => {
               </div>
                   </div>
               </div>
+
+          {/* Shipment Map */}
+          <ShipmentMap shipment={shipment} isDarkMode={isDarkMode} />
 
           {/* Shipment Status Timeline */}
           <div className={`rounded-lg p-6 mb-6 ${
